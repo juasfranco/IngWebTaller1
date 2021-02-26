@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--Styles-->
     <link rel="stylesheet" href="./styles/style.css">
     <title>Taller1</title>
 </head>
 
 <body>
-    <h1>Taller 1</h1>
-    <hr>
-    <h1>Formulario</h1>
+
+    <div class="containerV title">
+        <h1>Taller 1</h1>
+        <h1>Formulario</h1>
+    </div>
+
     <form action="">
-        <div>
-            <div>
+        <div class="containerH">
+            <div class="card">
                 <label for="fname">Ingrese sus nombres:</label><br>
                 <input type="text" id="fname" name="fname" placeholder="Luis Carlos"><br>
                 <label for="lname">Ingrese sus apellido:</label><br>
                 <input type="text" id="lname" name="lname" placeholder="Ortiz Salazar."><br>
             </div>
             <hr>
-            <div>
+            <div class="card">
                 <label for="fphone">Ingrese celular:</label><br>
                 <input type="text" id="fphone" name="fphone" placeholder="+ 57 3012058791"><br>
                 <label for="ldir">Ingrese sus Dirección:</label><br>
                 <input type="text" id="ldir" name="ldir" placeholder="Cll 172 # 56b -32"><br>
             </div>
             <hr>
-            <div>
+            <div class="card">
                 <label for="birthday">Fecha de nacimiento:</label>
                 <br>
                 <input type="date" id="birthday" name="birthday">
@@ -38,7 +45,7 @@
                 <input type="mail" id="fmail" name="fmail" placeholder="juan@hotmail.com"><br>
             </div>
             <hr>
-            <div>
+            <div class="card">
                 <label for="fpassw">Ingrese una contraseña:</label><br>
                 <input type="password" id="fpassw" name="fpassw"><br>
                 <label for="lcpassw">Confirme su contraseña:</label><br>
@@ -46,8 +53,10 @@
             </div>
 
         </div>
-        <br>
-        <input type="submit" value="Submit">
+        <div class="containerV">
+            <input class="btn" type="submit" value="Submit">
+        </div>
+
     </form>
 </body>
 
